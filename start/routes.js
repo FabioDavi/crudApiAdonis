@@ -17,3 +17,14 @@
 const Route = use('Route')
 
 Route.post('/register','AuthController.register')
+Route.post('/authenticate','AuthController.authenticate')
+
+Route.post('/app','AppController.index').middleware(["auth"])
+
+/*
+{
+    "username":"Fabio Davi Rauh",
+    "email":"fd@hj.com  ",
+    "password":"123123"
+}
+*/
