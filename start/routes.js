@@ -17,7 +17,7 @@
 const Route = use('Route')
 
 Route.post('/register','AuthController.register')
-Route.post('/authenticate','AuthController.authenticate') 
+Route.post('/authenticate','AuthController.authenticate')  
 
 Route.post('/app','AppController.index').middleware(["auth"])
 
